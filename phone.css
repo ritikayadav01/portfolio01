@@ -1,0 +1,109 @@
+body {
+    background-color: rgb(37, 32, 69);
+}
+
+#skills {
+    width: 1300px;
+    flex-direction: column;
+}
+
+.box {
+    flex-direction: column;
+
+
+}
+
+.card {
+    width: 600px;
+    height: 400px;
+}
+
+#about {
+    flex-direction: column;
+    width: 1300px;
+    text-align: left;
+
+
+}
+
+#about.abouttext {
+    text-align: left;
+}
+
+.abouttext {
+    padding: 0px 4px 2px 2px;
+    text-align: left;
+    overflow: scroll;
+
+}
+
+#work .project-container {
+    flex-direction: column;
+
+}
+
+#education .edu-container {
+    flex-direction: column;
+}
+
+
+#education {
+    width: 1300px;
+}
+
+#education .edutitle {
+    font-size: 100px;
+}
+
+#education .edu-box {
+    width: 850px;
+    padding-bottom: 30px;
+    border-bottom-right-radius: 60px;
+}
+
+#work {
+    width: 1300px;
+}
+
+#work .projects-title {
+    font-size: 80px;
+}
+
+#work .project-box {
+    width: 900px;
+    height: 500px;
+    padding-bottom: 30px;
+    border-bottom-right-radius: 60px;
+}
+
+
+nav ul li {
+    /* display: block; */
+    text-align: center;
+}
+
+nav ul li a {
+    font-size: 20px;
+    text-wrap: wrap;
+}
+
+nav ul li .logo {
+    font-size: 30px;
+}
+
+.hero {
+    width: 1300px;
+    /* height: 1000px; */
+}
+
+#contacts {
+    width: 1300px;
+}
+
+footer {
+    width: 1300px;
+}
+
+footer p {
+    text-align: justify;
+}

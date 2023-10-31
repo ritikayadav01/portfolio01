@@ -1,0 +1,789 @@
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url(bg1.png);
+    background-color: #fffdfd;
+    /* background: linear-gradient(rgb(228, 226, 232), rgb(152, 125, 216)); */
+
+    background-size: cover;
+    background-position: center;
+    /* opacity: 0.3; */
+    /* background: linear-gradient(to); */
+}
+
+.mid {
+    /* for keeping it in the middle we have to use 3 things display , width ,margin auto  */
+    display: block;
+    width: 100%;
+    margin: 0px 0px;
+    /* border: 2px solid black; */
+
+}
+
+/* @media (max-width: 600px) {
+    a {
+      max-width: 100px; 
+    }
+  }
+  
+  @media (max-width: 400px) {
+    a {
+      max-width: 80px; 
+    }
+  } */
+nav {
+
+    display: inline-block;
+    background-color: black;
+    /* border-radius: 35px; */
+    margin: 0px;
+    padding: 8px;
+    position: fixed;
+    /* will keep it above all the sections  */
+    z-index: 100;
+
+
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Source Serif 4', serif; */
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+
+    scroll-behavior: smooth;
+}
+
+
+.logo {
+    float: right;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding: 2px 2px;
+    padding-right: 45px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+span {
+    color: darkslateblue;
+}
+
+nav ul li {
+    font-size: 18px;
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul {
+    margin: 0px 0px 0px 0px;
+}
+
+nav ul li a {
+
+    /* color: black; */
+    color: #eeeeee;
+
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+
+}
+
+nav ul li a:hover {
+
+    color: rgb(100, 88, 178);
+    transition: .4s;
+    text-decoration: none;
+    /* text-shadow: .5px .5px  #d9d6ec; */
+
+
+
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 4.6%;
+    transform: translateY(-50%);
+    width: 433px;
+
+
+}
+
+body {
+    background-color: rgb(37, 32, 69);
+
+}
+
+
+h1 {
+    /* color: rgb(89, 50, 132) ;
+     */
+    /* color: darkslateblue; */
+
+    margin: 20px 0px 20px;
+    font-size: 75px;
+}
+
+.content h1:hover {
+    cursor: pointer;
+    text-shadow: 1px 1px 4px #171047;
+}
+
+.content h3 {
+
+    /* color: rgb(116, 91, 230); */
+
+    font-size: 30px;
+    margin-bottom: 50px;
+
+
+}
+
+
+h4 {
+    /* color: rgb(116, 91, 230); */
+    letter-spacing: 2px;
+    font-size: 35px;
+}
+
+
+/*------------------------------------- effect for the typing --------------------------------------------------------------- */
+.content h1 {
+    letter-spacing: 2px;
+    border-right: 3px solid black;
+    width: 100%;
+    width: nowrap;
+    overflow: hidden;
+    animation: cursor 0.4s infinite, typing 2.5s steps(12);
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+.newsletter form {
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+
+}
+
+.newsletter form input:first-child {
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 30px;
+
+}
+
+.newsletter form input:last-child {
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: black;
+    background-color: darkslateblue;
+    box-sizing: 0px 0px 5px #000, 0px 0px 15px #0f0505;
+
+
+}
+
+/* --------------------------------------------------About section ---------------------------------------------------------------------------- */
+.about {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #000000;
+    background: linear-gradient(rgb(24, 12, 51), black);
+    background: linear-gradient(to bottom, black, rgb(29, 10, 75));
+
+}
+
+.about img {
+    height: auto;
+    width: 800px;
+    border-radius: 18px;
+    box-shadow: rgb(127, 91, 210);
+}
+
+
+.abouttext {
+    width: 550px;
+
+}
+
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.abouttext h2 {
+    color: #eeeeee;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 7px rgb(155, 143, 227);
+
+}
+
+/* .abouttext h2:hover {
+    cursor: pointer;
+    transition: .3s;
+    text-shadow: 2px 2px 7px rgb(155, 143, 227);
+} */
+
+.abouttext h5 {
+    color: #eeeeee;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+
+}
+
+.abouttext p {
+    color: rgb(178, 167, 239);
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+
+
+}
+
+#prog {
+    width: 79.9%;
+    height: auto;
+    /* transform: scaleX(-1); */
+    border-radius: 10px;
+    position: relative;
+}
+
+#left {
+    text-align: right;
+}
+
+/* ----------------------------------------------------------------skill section --------------------------------------------------------- */
+.skill {
+    background-color: #000000;
+    background-image: url(skilll.avif);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 100px 0px;
+
+}
+
+.title h2 {
+    color: white;
+    width: 1130px;
+    font-size: 75px;
+    margin: 30px auto;
+    text-align: center;
+    text-shadow: 2px 2px 7px rgb(155, 143, 227);
+
+
+}
+
+.title h2:hover {
+    cursor: pointer;
+    transition: .3s;
+    text-shadow: 3px 3px 8px rgb(155, 143, 227);
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+
+}
+
+.card {
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #181145;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+
+    text-align: center;
+
+
+    transition-property: all;
+    transition-duration: .3s;
+    transition-delay: 0s;
+    transition-timing-function: ease-in-out;
+
+}
+
+.card:hover {
+    box-shadow: 0px 0px 17px white;
+}
+
+/* .card:hover{
+    height: 400px ;
+width: 395px ;
+border-radius: 30px ;
+font-size: 25px;
+} */
+.card i {
+    font-size: 50px;
+    display: inline-block;
+
+    text-align: center;
+    margin: 25px 8px;
+    color: rgb(181, 171, 235);
+
+
+    /* color: aliceblue; */
+}
+
+h5 {
+    color: #eeeeee;
+    font-size: 23px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+.card h5:hover {
+    cursor: pointer;
+    transition: .3s;
+    text-shadow: 2px 2px 7px rgb(155, 143, 227);
+
+}
+
+.pra p {
+    color: rgb(155, 143, 227);
+
+    text-align: justify;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+
+}
+
+.card span {
+    color: #8478d6;
+}
+
+.skilll {
+    margin: 10px 0;
+}
+
+.progress-bar {
+    background-color: #ccc;
+    border-radius: 5px;
+    height: 20px;
+    margin-top: 5px;
+    text-shadow: 2px 2px 7px rgb(155, 143, 227);
+    box-shadow: 2px 2px 7px rgb(155, 143, 227);
+}
+
+.progress {
+    background-color: #564ba8;
+    border-radius: 5px;
+    height: 100%;
+    width: 0;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* --------------------------------------------------------Project section ----------------------------------------------- */
+.fourthsection {
+    width: 100%vw;
+    margin: 0px 0px 0px 0px;
+    background-color: #180c35;
+    background: linear-gradient(#0a0534, #311b68);
+
+
+}
+
+.fourthsection h3 {
+    text-align: center;
+    margin: 0px 0px;
+    color: #eeeeee;
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 7px rgb(155, 143, 227);
+
+}
+
+/* .fourthsection h3:hover {
+    cursor: pointer;
+    transition: .3s;
+    text-shadow: 2px 2px 7px rgb(155, 143, 227);
+
+
+} */
+
+.fourthsection h2 {
+    display: flex;
+
+    text-align: center;
+}
+
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.project-box {
+    position: relative;
+    width: 30em;
+    height: 17em;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.project-box img {
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+
+}
+
+.project-box:hover img {
+    transform: scale(1.1);
+}
+
+.project-layer i {
+    font-size: 3rem;
+}
+
+.project-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(24, 7, 54, 0.1), #7462a5);
+    /* #023e8a */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.project-layer h2 {
+    font-size: 2rem;
+}
+
+.project-layer p {
+    font-size: 1.2rem;
+}
+
+.project-box:hover .project-layer {
+    transform: translateY(0);
+}
+
+.project-layer a {
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+}
+
+/* ----------------------------------------------------education section ------------------------------------------------------------------------------- */
+.edu {
+    width: 100%vw;
+    margin: 0px 0px 0px 0px;
+    background-color: #180c35;
+    background: linear-gradient(rgb(30, 11, 74), #0a0534);
+
+
+}
+
+.edu h3 {
+    text-align: center;
+    margin: 0px 0px;
+    color: #eeeeee;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 7px rgb(155, 143, 227);
+
+}
+
+/* .edu h3:hover {
+    cursor: pointer;
+    transition: .3s;
+    text-shadow: 2px 2px 7px rgb(155, 143, 227);
+
+
+} */
+
+.edu h2 {
+    text-align: center;
+}
+
+
+.edu-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.edu-box {
+    position: relative;
+    width: 30em;
+    height: 17em;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.edu-box img {
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+
+}
+
+.edu-box:hover img {
+    transform: scale(1.1);
+}
+
+.edu-layer i {
+    font-size: 3rem;
+}
+
+.edu-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(24, 7, 54, 0.1), #7462a5);
+    /* #023e8a */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.edu-layer h2 {
+    color: #000;
+    font-size: 2rem;
+}
+
+.edu-layer h3 {
+    color: #000;
+}
+
+.edu-layer p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.edu-box:hover .edu-layer {
+    transform: translateY(0);
+}
+
+.edu-layer a {
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+}
+
+/* -------------------------------------------------------------contact section ----------------------------------------------------------------------- */
+.contact {
+    width: 100%;
+    height: 210px;
+    background: #121212;
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(rgb(49, 27, 104), #000000);
+
+}
+
+.contact p {
+    color: #eeeeee;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+
+}
+
+.contact .button-two {
+    /* color: black; */
+    border-radius: 40px;
+    background-color: rgb(128, 97, 206);
+    color: #eeeeee;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    transition: .4s;
+}
+
+.contact .button-two:hover {
+    background-color: transparent;
+    border: 2px solid rgb(128, 97, 206);
+    cursor: pointer;
+
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #101010;
+    background-image: url(end1111.jpg);
+    /* transform: scaleX(); */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: right;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+footer p:nth-child(1) {
+    font-family: 'Ubuntu', sans-serif;
+
+    font-size: 45px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px 20px;
+
+
+
+}
+
+footer p:nth-child(2) {
+    font-family: 'Ubuntu', sans-serif;
+
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    width: 500px;
+    line-height: 26px;
+    text-align: left;
+    padding: 10px 20px;
+
+
+}
+
+.social {
+    display: flex;
+    padding: 5px 5px;
+
+
+}
+
+.social a {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0, 0, 0);
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: rgb(169, 128, 235);
+    text-decoration: none;
+    font-size: 40px;
+
+
+}
+
+.social a:hover {
+    transition: .3s;
+    transform: scale(1.3);
+
+}
+
+.end {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    bottom: 7px;
+    font-size: 20px;
+    padding: 10px 20px;
+
+
+}
+
+#hiree {
+    width: 120px;
+    height: 120px;
+
+}
+
+
+.cta {
+    display: inline-block;
+    padding: 10px 23px;
+    color: rgb(43, 32, 112);
+    background-color: transparent;
+    /* color: rgb(120, 106, 212); */
+
+    border: 2px solid rgb(43, 32, 112);
+    font-size: 28px;
+    font-weight: bold;
+    /* text-transform: uppercase; */
+    letter-spacing: 0.1rem;
+    margin-top: 30px;
+    transition: 0.3s ease;
+    transition-property: background-color, color;
+    border-radius: 1px;
+}
+
+.cta:hover {
+    /* border: 2px solid rgb(5, 5, 6); */
+    box-shadow: 2px 3px 2px 2px #7669cc;
+    transition: all 0.4s ease;
+
+
+    color: rgb(222, 215, 215);
+    background-color: rgb(51, 42, 109);
+}
